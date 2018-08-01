@@ -1,0 +1,40 @@
+{
+  "name": "xero",
+  "version": "1.0.0",
+  "description": "QA Test for Xero",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --project tsconfig.json",
+    "test": "webdriver-manager update && npm run compile && protractor build/protractor.conf.js --params.environment=prod",
+    "test:test": "npm run compile && protractor build/protractor.conf.js --params.environment=test",
+    "test:local": "npm run compile && protractor build/protractor.conf.js --params.environment=local",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philqa/xero"
+  },
+  "contributors": [
+    "Phil Hicks"
+  ],
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/lodash": "^4.14.104",
+    "browser-sync": "^2.23.6",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^5.0.1",
+    "jasmine": "^3.1.0",
+    "jasmine-reporters": "^2.3.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.3.0",
+    "protractor-browser-logs": "^1.0.351",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "typescript": "^2.7.2",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "test": "^0.6.0",
+    "uuid": "^3.2.1"
+  }
+}
