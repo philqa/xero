@@ -13,7 +13,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phil@automatatech.com.au',
             username: 'phil@automatatech.com.au',
-            password: 'P455W0RD!'
+            password: '********'
         }
     },
     test: {
@@ -22,7 +22,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phil@automatatech.com.au',
             username: 'phil@automatatech.com.au',
-            password: 'P455W0RD!'
+            password: '********'
         }
     },
     local: {
@@ -31,7 +31,7 @@ const ENV_CONFIG = {
         data: {
             email: 'phil@automatatech.com.au',
             username: 'phil@automatatech.com.au',
-            password: 'P455W0RD!'
+            password: '********'
         }
     }
 };
